@@ -1,0 +1,100 @@
+@function multiple-box-shadow ($n) {
+    $value: '#{random(6000)}px #{random(6000)}px #FFF';
+    @for $i from 2 through $n {
+      $value: '#{$value} , #{random(6000)}px #{random(6000)}px #FFF';
+  }
+  
+    @return unquote($value);
+  }
+  
+  $shadows-small:  multiple-box-shadow(700);
+  $shadows-medium: multiple-box-shadow(200);
+  $shadows-big:    multiple-box-shadow(100);
+  
+  * {
+    margin: 0;
+  }
+  
+  :root {
+    --star-speed: 50s;
+    --star-size: 1px;
+  }
+  
+ 
+  
+  p {
+    color: white;
+    text-align: center;
+    font-size: 5em;
+  }
+  
+  #container {
+    width: 100vw;
+  }
+  
+  #stars {
+    width: var(--star-size);
+    height: var(--star-size);
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar calc(var(--star-speed) * 4) linear infinite;
+      
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      width: var(--star-size);
+      height: var(--star-size);
+      background: transparent;
+      box-shadow: $shadows-small;
+      }
+  }
+  
+  #stars2 {
+    width: calc(var(--star-size) * 2);
+    height: calc(var(--star-size) * 2);
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar calc(var(--star-speed) * 7) linear infinite;
+    
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      width: calc(var(--star-size) * 2);
+      height: calc(var(--star-size) * 2);
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+  
+  #stars3 {
+    width: calc(var(--star-size) * 3);
+    height: calc(var(--star-size) * 3);
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar calc(var(--star-speed) * 10) linear infinite;
+      
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      width: calc(var(--star-size) * 3);
+      height: calc(var(--star-size) * 3);
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+
+      
+  @keyframes animStar {
+    from
+    {
+      transform: translateY(-1080px);
+    }    
+    to
+    {
+      transform: translateY(-4000px); 
+    }
+  }
+      

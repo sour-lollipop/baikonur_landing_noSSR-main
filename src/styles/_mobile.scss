@@ -1,0 +1,94 @@
+.mobile{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+  cursor:default;
+  justify-content: center;
+    @media (max-width: 700px){
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+}
+.imageMobile{
+  @media (max-width: 700px){
+    height: auto;
+    width: 150px;
+  }
+}
+.mobileContentContainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.downloadIcons{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  margin-left: 20px;
+}
+.mobileApp{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    font-family: 'RussoOne';
+    margin-left: 10%;
+    @media (max-width: 700px){
+      align-items: center;
+      height: 500px;
+      margin-left: 0;
+      width: 300px;
+
+    // background-color: brown;
+    }
+    h1{
+      font-size: 35px;
+      font-weight: 100;
+      @media (max-width: 700px){
+        font-size: 25px;
+        width: 90%;
+
+      }
+    }
+    h2{
+      font-weight: 100;
+      font-size: 25px;
+      width: 650px;
+      @media (max-width: 700px){
+        margin-top: 10px;
+        font-size: 18px;
+        width: 90%;
+      }
+    }
+    h3{
+      font-size: 25px;
+      font-weight: 100;
+    }
+    .button{
+      display: flex;
+      color: #000000;
+      background-color: #ffffff;
+      height: 75px;
+      width: 500px;
+      font-size: 35px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  }
+  
+  .GooglePlay{
+    margin-top: 20px;
+    margin-left: 25px;
+    @media (max-width: 700px){
+      margin-left: 0;
+    }
+  }
+  

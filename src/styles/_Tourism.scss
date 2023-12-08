@@ -1,0 +1,114 @@
+.Tourism{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+  cursor:default;
+  @media (max-width: 700px){
+        margin: 0px;
+        flex-direction: column;
+        height: 500px;
+        margin-top: 200px;
+
+    }
+  }
+
+.TStarts{
+    @media (max-width: 700px){
+        left: 0;
+        width: 280px;
+        height: auto;
+        position: static;
+    }
+}
+.star_button{
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    z-index: 10;
+    background-color: pink;
+    opacity: 0.3;
+    @media (max-width: 700px){
+        height: 15px;
+        width: 10px;
+    }
+}
+
+.star_first{
+    position: relative;
+    left:-800px;
+    top:-140px;
+    @media (max-width: 700px){
+        left: -135px;
+        top: -144px;
+    }
+}
+
+.star_second{
+    position: relative;
+    left:-555px;
+    top:-130px;
+    @media (max-width: 700px){
+        left: -40.5px;
+        top: -154.5px;
+    }
+}
+
+.star_third{
+    position: relative;
+    left:-426px;
+    top:-66px;
+    @media (max-width: 700px){
+        left: 13px;
+        top: -148px;
+    }
+}
+
+.star_four{
+    position: relative;
+    left:-514px;
+    top:235px;
+    @media (max-width: 700px){
+        left: -8px;
+        top: -57px;
+    }
+}
+
+.star_five{
+    position: relative;
+    left:-368px;
+    top:-236px;
+    @media (max-width: 700px){
+        left: 52px;
+        top: -237px;
+    }
+}
+
+.star_six{
+    position: relative;
+    left:-153px;
+    top:-139px;
+    @media (max-width: 700px){
+        left: 136px;
+        top: -218px;
+    }
+}
+
+.textToPressStar{
+    color: #ffffff;
+    display: flex;
+    font-family: 'RussoOne';
+    justify-content: center;
+    height: 120px;
+    font-size: 25px;
+    margin-top: -5%;
+    @media (max-width: 700px){
+    font-size: 18px;
+    margin-top: -50%;
+    height: 150px;
+    
+  cursor:default;
+  font-weight: 100;
+}
+}

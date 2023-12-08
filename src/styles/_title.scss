@@ -1,0 +1,26 @@
+
+  .title {
+    background: linear-gradient(to bottom, white 50%, black 60%, black 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: 'RussoOne';
+    display: flex;
+    align-items: center;
+    height: 600px;
+    z-index: 150;
+    font-weight: 900; 
+    line-height: 86px;
+    width: 350px;
+    font-size: 76px;
+    cursor: default;
+    @media (max-width: 700px) {
+      height: 300px;
+      margin-top: -200px;
+      width: 100%;
+      font-size: 55px;
+      justify-content: center;
+
+    }
+  }
